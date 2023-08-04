@@ -151,5 +151,6 @@ const quizInfo = [
         answer: "Дак,Ющенко,42"
     }
 ];
-
+const finalImg = 'V62K23jp/ruslans-picture.png';
+export { finalImg };
 export default quizInfo;

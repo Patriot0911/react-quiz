@@ -27,7 +27,6 @@ export default function Card({
         const correctAnswers = quizInfo[index].answer.toLocaleLowerCase().split(',');
         if(correctAnswers.includes(answers[index].toLocaleLowerCase())) {
             ChangeStatus(index);
-            console.log('correct!')
         }
     }
 

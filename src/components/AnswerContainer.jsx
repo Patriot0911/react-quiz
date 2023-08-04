@@ -7,18 +7,18 @@ export default function AnswerContainer({
 }) {
     return (
         <div className={'answer-container'}>
-        <input
-            disabled={results[index] ? 'disabled' : ''}
-            className={'answer-input'}
-            placeholder={'Напиши відповідь тут!'}
-            value={answers[index]}
-            onChange={(e) => changeAnswer(index, e.target.value)}
-        />
-        <button
-            onClick={() => checkAnswer(index)}
-        >
-            Перевірити
-        </button>
-    </div>
+            <input
+                disabled={results[index] ? 'disabled' : ''}
+                className={'answer-input'}
+                placeholder={'Напиши відповідь тут!'}
+                value={answers[index]}
+                onChange={(e) => changeAnswer(index, e.target.value)}
+            />
+            <button
+                onClick={() => checkAnswer(index)}
+            >
+                Перевірити
+            </button>
+        </div>
     );
 };
