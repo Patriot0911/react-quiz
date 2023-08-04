@@ -1,0 +1,131 @@
+.quiz-body {
+  position: relative;
+  width: 800px;
+  min-height: 850px;
+  background: linear-gradient(35deg, rgba(106, 110, 111, 0.618), #d4d4d59e);
+  border-radius: 5px;
+  padding: 25px;
+  margin: auto;
+}
+.quiz-body ul {
+  list-style: none;
+  padding: 0;
+}
+.quiz-body .quest-item {
+  font-size: large;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #474747b6;
+  border-radius: 15%;
+  width: 40px;
+  transition: all 0.35s ease;
+}
+.quiz-body .quest-item:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px #4643439d;
+}
+.quiz-body .in-use {
+  background-color: #f92380da;
+}
+.quiz-body .done {
+  background-color: green;
+}
+
+.quiz-body .answer-counter {
+  position: absolute;
+  right: 50px;
+  top: -1px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+
+
+.info-container .card-name {
+  position: relative;
+}
+.info-container h1 {
+  overflow-wrap: break-word;
+  display: inline;
+}
+.info-container .help {
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  background-color: #1f1e1e48;
+  border-radius: 30%;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 5px;
+  padding: 4px;
+}
+.info-container .help-window {
+  position: absolute;
+  display: none;
+  margin-left: 5px;
+  max-width: 350px;
+  max-height: 100px;
+  overflow-y: scroll;
+  padding: 10px;
+  z-index: 2;
+  background: #2c2c2ce3;
+  border-radius: 10px;
+}
+.info-container .question {
+  position: relative;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(212, 212, 213, 0.185);
+  height: 250px;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 2px 2px 15px 2px #1f1e1e8f;
+  color: rgba(33, 31, 31, 0.857);
+  scroll-behavior: smooth;
+  overflow-wrap: break-word;
+  overflow-y: auto;  
+}
+.info-container .image-container {
+  margin-top: 15px;
+  height: 380px;
+  border-radius: 8px;
+  width: 100%;
+}
+.image-container .content-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transform: perspective(200px);
+  transition: all 0.35s ease;
+}
+.image-container .content-img:hover {
+  transform: scale(1.5) translateY(-55px);
+}
+
+
+.answer-container {
+  padding-top: 25px;
+}
+.answer-container .answer-input {
+  width: 250px;
+  margin-right: 25px;
+  height: 20px;
+}
+.answer-container .answer-input:disabled {
+  background-color: #4be219a3;
+  color: black;
+}
+.answer-container button {
+  border: solid #1f1e1e13;
+  scale: 1.1;
+  transition: all 0.35s ease;
+}
+.answer-container button:hover {
+  scale: 1.2;
+  background-color: #a59b9b6a;
+}
+.answer-container button:active {
+  background-color: rgb(42, 45, 35);
+}
