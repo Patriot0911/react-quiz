@@ -11,7 +11,9 @@ import Question from './Question';
 export default function Card({ 
     results, 
     index,
-    ChangeStatus
+    ChangeStatus,
+    helpState,
+    helpSet
 }) {
     const [answers, setAnswers] = useState(answersInitial);
 
@@ -35,6 +37,8 @@ export default function Card({
             <CardHead 
                 info={quizInfo[index]}
                 index={index}
+                helpState={helpState}
+                helpSet={helpSet}
             />
             <Question
                 str={quizInfo[index].question}

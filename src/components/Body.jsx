@@ -7,7 +7,9 @@ export default function Body({
     questIndex,
     setQuestIndex,
     ChangeStatus,
-    correctAnswers
+    correctAnswers,
+    helpState,
+    helpSet
 }) {
     return (
         <>
@@ -28,6 +30,8 @@ export default function Body({
                     results={results}
                     index={questIndex}
                     ChangeStatus={ChangeStatus}
+                    helpState={helpState}
+                    helpSet={helpSet}
                 />
             </div>
         </>

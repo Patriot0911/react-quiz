@@ -7,6 +7,7 @@ export default function App() {
   const [results, setResults] = useState(createInitial);
   const [curQuest, setCurQuest] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [help, setHelp] = useState(false);
 
   function ChangeStatus(index) {
     const list = [...results];
@@ -16,6 +17,7 @@ export default function App() {
   }
   function goToQuestion(index) {
     if(index === curQuest) return;
+    if(help) setHelp(false);
     setCurQuest(index);
   }
 
@@ -26,6 +28,8 @@ export default function App() {
       setQuestIndex={goToQuestion}
       ChangeStatus={ChangeStatus}
       correctAnswers={correctAnswers}
+      helpState={help}
+      helpSet={setHelp}
     />
   );
 };

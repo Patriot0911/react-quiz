@@ -1,19 +1,21 @@
-import { useState } from "react";
-
-export default function CardHead({ info, index }) {
-    const [help, setHelp] = useState(false);
+export default function CardHead({ 
+    info, 
+    index, 
+    helpState,
+    helpSet 
+}) {
     return (
         <div className={'card-name'}>
             <h1>{info.name} №{index+1}</h1>
             <sup 
                 className={'help'}
-                onClick={() => setHelp(!help)}
+                onClick={() => helpSet(!helpState)}
             >
                 ?
             </sup>
             <div 
                 className={'help-window'}
-                style={help ? { display: "inline-block" } : {}}
+                style={helpState ? { display: "inline-block" } : {}}
             >
                 {info.help}
             </div>

@@ -85,7 +85,7 @@
   color: rgba(33, 31, 31, 0.857);
   scroll-behavior: smooth;
   overflow-wrap: break-word;
-  overflow-y: auto;  
+  overflow-y: auto;
 }
 .info-container .image-container {
   margin-top: 15px;
