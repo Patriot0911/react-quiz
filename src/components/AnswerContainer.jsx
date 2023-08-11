@@ -5,19 +5,25 @@ export default function AnswerContainer({
     changeAnswer,
     index
 }) {
+    function handleKeyDown(event) {
+        if(event.key === 'Enter') {
+            checkAnswer(index);
+        }
+    }
     return (
         <div className={'answer-container'}>
             <input
                 disabled={results[index] ? 'disabled' : ''}
                 className={'answer-input'}
-                placeholder={'Напиши відповідь тут!'}
+                placeholder={'Put your answer here'}
                 value={answers[index]}
                 onChange={(e) => changeAnswer(index, e.target.value)}
+                onKeyDown={handleKeyDown}
             />
             <button
                 onClick={() => checkAnswer(index)}
             >
-                Перевірити
+                Check
             </button>
         </div>
     );

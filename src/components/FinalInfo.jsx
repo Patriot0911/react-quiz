@@ -21,7 +21,7 @@ export default function FinalInfo() {
                         setIsHidden(!isHidden);
                     }}
                 >
-                    {isHidden ? 'Показати' : 'Сховати'}
+                    {isHidden ? 'Show' : 'Hide'}
                 </button>
                 {
                     finalImg &&
@@ -29,7 +29,7 @@ export default function FinalInfo() {
                         src={`https://i.postimg.cc/${finalImg}`}
                     />
                 }
-                Вітаємо!
+                Congratulations!
             </div>
         </div>
     );

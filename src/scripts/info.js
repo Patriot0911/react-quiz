@@ -1,156 +1,21 @@
 const quizInfo = [
     {
-        name:       "Душне питання",
-        question:   "Скільки важить душа?",
-        imglink:    "9QXWTNTK/image.jpg",
-        help:       "Це як відповідь на основне питання світу, але поділене на два",
+        name:       "What Am I?",
+        question:   "I use a long track. I transport heavy loads. Many tourists use me. Watch for lights to stop for me. I will show you beautiful scenery.",
+        imglink:    "9QXWTNTK/image.jpg", // postimage id
+        help:       "I won`t help", // if question is too diff u can give some help :p
 
-        answer: "21,42"
+        answer: "train"
     },
     {
-        name:       "Су НЕ ВИЙ МЕНІ ТУТ",
-        question:   "Скільки існує ігор у серії 'The Elder Scrolls'?",
-        help:       "На стан 04.08.23, без мобільних ігор",
-        imglink:    "NF6pZry3/8819f463-26ad-4128-86eb-187c963dbcec.jpg",
+        name:       "What Am I?",
+        question:   "Please blow air in me. I come in many colours. I'm a symbol of celebration. Don't touch me with anything sharp. I only last a day or two.",
+        help:       "I won`t help",
 
-        answer: "8,42"
-    },
-    {
-        name:       "Питання на Сєпара",
-        question:   "Коли святкується День Незалежності України?",
-        help:       "У серпні місяці, а дата - день народження твого конченого знайомого :eyes:",
-        imglink:    "gkkG4y6b/flah-v-nebe.jpg",
-
-        answer: "24 серпня,24.08,24.08.23,42"
-    },
-    {
-        name:       "Тарантул",
-        question:   "Який номер, у організації Реданів, мав персонаж Фейтан з аніме 'Hunter x Hunter'?",
-        help:       "Там не так багато варіантів btw",
-        imglink:    "fWFhj4Zm/1eedcb3-633.jpg",
-        
-        answer: "2,42"
-    },
-    {
-        name:       "Саламандри",
-        question:   "Як звати твого першого ігрового персонажа у грі 'Naraka:Bladepoint'?",
-        help:       "Майже як змія, але якби вона була Мімом",
-        imglink:    "6QdmZScV/1625490271-1.jpg",
-        
-        answer: "Гадюка Нін,42"
-    },
-    {
-        name:       "Горіхи",
-        question:   "4 лютого 2019 року, вийшла гра у жанрі королівської битви, яка на відміну від інших ігор жанру, вийшла більш динамічною та з конкретним переліком ігрових персонажів. Назви цю гру.",
-        help:       "Горіхи сцуко, важко?",
-        
-        answer: "Apex,Apex Legends,42"
-    },
-    {
-        name:       "Героїн",
-        question:   "Яке геройське ім'я персонажу 'Цунагу Хакамада', з аніме 'My Hero Academia'?",
-        help:       "Щось по пояс, але у нього до ротяки",
-        
-        answer: "Топ Джинс,Топ Джинс,Best Jeanist,Бест Джінс,42"
-    },
-    {
-        name:       "Борис Бритва",
-        question:   "Який навчальний заклад був перейминований у місті Бориса, хєр попадеш, та Слави?",
-        help:       "Це як БДСМ, але воно ближче до ДРГ",
-        imglink:    "t4yjMhcz/maxresdefault.jpg",
-
-        answer: "БДГ,Бориславська Державна Гімназія,42"
-    },
-    {
-        name:       "Банки",
-        question:   "Скільки потрібно круток для 100-% гаранту у грі 'Genshin Impact'?",
-        help:       "Баба не чує... х10",
-        
-        answer: "90,42"
-    },
-    {
-        name:       "Бабки не проблема",
-        question:   "У всесвіті 'Overwatch', присутній персонаж підтримки Ana, на якій один гравець зміг підняти Майстра за 3 години. Назви повне ім'я Бабки :3",
-        help:       "Хочеш Амарів?",
-        imglink:    "zvXh7brD/ana-00.jpg",
-        
-        answer: "Анна Амарі,Ana Amari,42"
-    },
-    {
-        name:       "Османський Хан",
-        question:   "У грі 'Overwatch', присутній персонаж атаки Hanzo, який має активну здібність 'Storm Arrows'. Скільки стріл під дією скілла він може випустити?",
-        help:       "4 стріли у сумці...",
-        imglink:    "wjdm4GHb/5b5775c0347a02bf41000007.webp",
-        
-        answer: "5,42"
-    },
-    {
-        name:       "Рокфор на горі свиснув",
-        question:   "У сучасних зошитах, можна побачити червоні лінії. Вони були вигадані давно, і причиною їх створення був захист від певної тварини. Назви цю тварину.",
-        help:       "Повертаючись до теми Overwatch -а, ім'я цієї тварини є частиною імені напарника RoadHog-а, коли вони були розбійниками",
-        imglink:    "Pr6JsXgc/images.jpg",
-
-        answer: "Щур,Пацюк,42"
-    },
-    {
-        name:       "Абордаж твого очка",
-        question:   "Біля берега стоїть корабель, з якого звисає мотузкова драбина. Драбинка має 10 сходинок. Відстань між ними 30 см. Найнижча сходинка торкається поверхні води. Починається приплив, і вода починає підніматися по 15 см на годину. Скільку часу потрібно, щоб вода дійшла до 3-ї сходинки?",
-        help:       "Корабель піднімається разом з водою :eyes:",
-        
-        answer: "0,Ніколи,42"
-    },
-    {
-        name:       "Ресторан 'Кінець Світу'",
-        question:   "Назви відповідь на питання життя, Всесвіту і взагалі всього.",
-        help:       "Номер питання [xy] -> [yx]+1",
-        
-        answer: "42"
-    },
-    {
-        name:       "Євробляха",
-        question:   "Хто представляв Україну на Євробаченні 2023-го року?",
-        help:       "Вони були з піснею Heart of Steel ._.",
-        
-        answer: "Творчі,Tvorchi,42"
-    },
-    {
-        name:       "Га? й",
-        question:   "Якби твоє ім'я було географічним об'єктом, то яким?",
-        help:       "Типу, поле чи шо...",
-        
-        answer: "Лан,Русло,42"
-    },
-    {
-        name:       "Говерла",
-        question:   "Ім'я якого персонажу 'Overwatch' написано на горі 'Шембека'?",
-        help:       "Вони вбили Бастіофа...",
-        
-        answer: "Бастіон,Bastion,42"
-    },
-    {
-        name:       "Котяревський",
-        question:   "Як починається Енеїда?",
-        help:       "Перші 4 слова, якщо проблема у цьому. Якщо ні - то думай блет, тут не буде прямої підсказки, козаче",
-        
-        answer: "Еней був парубок моторний,42"
-    },
-    {
-        name:       "Friendship is magic",
-        question:   "У аніме 'Магічна битва', присутній персонаж, який у силу своїх здібностей, може використовувати лише назви інгредієнтів певної страви. Назви цю страву.",
-        help:       "Це доволі популярна страва з рису, яка вважається ще й ситною. Назва складається з частинки 'Демона' японською, або ж 'Оні'",
-        imglink:    "fLwkQVRG/download.jpg",
-
-        answer: "Онігірі,42"
-    },
-    {
-        name:       "Скрудж",
-        question:   "Так?",
-        help:       "3-ій президент України, або ж Мак дак",
-        imglink:    "rFbJykWn/449825.jpg",
-        
-        answer: "Дак,Ющенко,42"
-    }
+        answer: "ballon" // u can put answers with spliter ','
+                         // Ex: 'ball,ballon'
+    },    
 ];
-const finalImg = 'V62K23jp/ruslans-picture.png';
+const finalImg = null; // u can place here postimage id 
 export { finalImg };
 export default quizInfo;
